@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="language" content="en">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="robots" content="index"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.min.css' %}">
+    <link rel="stylesheet" type="text/css" href="{% static 'css/bootstrap.style.css' %}">
+    <link rel="icon" href="{% static 'img/tooth.png' %}" type="image/x-icon" />
+    <title>
+        Denpointment | {% block title %}{% endblock %}
+    </title>
+</head>
+
+<body class="bg-black">
+{% include "./_navbar.html" %}
+
+<main class="main-background p-5">
+    <div class="container">
+        <div class="row">
+            <div class="col-sm-12 col-md-10 col-xl-8 p-5">
+                <div class="white-box p-5">
+                    <section>
+                        {% include "./_message.html" %}
+                        {% block section %}
+                        {% endblock %}
+                    </section>
+                    <article>
+                        {% block article %}
+                        {% endblock %}
+                    </article>
+                </div>
+            </div>
+        </div>
+    </div>
+</main>
+
+{% include "./_footer.html" %}
+
+
+<script src="https://kit.fontawesome.com/83fdf682f5.js" crossorigin="anonymous"></script>
+<script src="{% static 'js/bootstrap.bundle.min.js' %}"></script>
+</body>
+
+</html>

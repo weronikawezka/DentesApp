@@ -1,0 +1,11 @@
+{% extends "users/base.html" %}
+{% block title %}Book an appointment{% endblock %}
+{% block content %}
+    <h1>Book an appointment</h1>
+
+    <h4>Welcome, {{ request.user.username }}!</h4>
+    <h5>You can book an appointment if you don't have an upcoming one.</h5>
+    <p>Please make sure that you are getting an appointment which suits you, you can only get 1 appointment at a
+        time.</p>
+
+{% endblock %}

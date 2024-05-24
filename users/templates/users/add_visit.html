@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Add Visit</title>
+    {% load static %}
+    {% load custom_filters %}
+    <link rel="stylesheet" href="{% static 'tooths.css' %}">
+</head>
+<body>
+    <h1>Add Visit for {{ patient.user.first_name }} {{ patient.user.last_name }}</h1>
+    <form method="post">
+        {% csrf_token %}
+        {{ form.as_p }}
+        <button type="submit">Add Visit</button>
+    </form>
+    <h2>Dental Chart</h2>
+    <div class="dental-chart">
+        <div class="row">
+            {% for i in 1|to:17 %}
+                <button class="tooth" id="tooth-{{ i }}"></button>
+            {% endfor %}
+        </div>
+        <div class="row">
+            {% for i in 17|to:33 %}
+                <button class="tooth" id="tooth-{{ i }}"></button>
+            {% endfor %}
+        </div>
+    </div>
+    <script src="{% static 'tooths.js' %}"></script>
+</body>
+</html>

@@ -1,0 +1,19 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Mój Profil</title>
+</head>
+<body>
+
+  <h3>Patient Information:</h3>
+  <p><strong>Email:</strong> {{ patient.user.email }}</p>
+  <p><strong>First Name:</strong> {{ patient.user.first_name }}</p>
+  <p><strong>Last Name:</strong> {{ patient.user.last_name }}</p>
+  <p><strong>Date of Birth:</strong> {{ patient.date_of_birth }}</p>
+  <p><strong>My doctor:</strong> {{ patient.doctor.user.first_name }} {{ patient.doctor.user.last_name }}</p>
+{% endblock %}

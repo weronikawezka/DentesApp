@@ -1,0 +1,11 @@
+{% extends 'users/base_doctor.html' %}
+
+{% block content %}
+  <h1>Welcome, {{ request.user.username }}!</h1>
+
+  <button onclick="location.href='{% url 'doctor_myprofile' %}'">My Profile</button>
+  <button onclick="location.href='{% url 'my_patients' %}'">My Patients</button>
+  <button onclick="location.href='{% url 'doctor_profile' %}'">Upcoming appointments</button>
+  <button onclick="location.href='{% url 'doctor_profile' %}'">Todays appointments</button>
+  <button onclick="location.href='{% url 'doctor_profile' %}'">New Visit</button>
+{% endblock %}

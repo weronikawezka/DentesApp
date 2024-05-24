@@ -1,0 +1,10 @@
+{% extends 'users/base_doctor.html' %}
+
+{% block content %}
+  <h3>Doctor Information:</h3>
+  <p><strong>Email:</strong> {{ doctor.user.email }}</p>
+  <p><strong>First Name:</strong> {{ doctor.user.first_name }}</p>
+  <p><strong>Last Name:</strong> {{ doctor.user.last_name }}</p>
+  <p><strong>Phone Number:</strong> {{ doctor.phone_number }}</p>
+
+{% endblock %}

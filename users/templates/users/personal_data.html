@@ -1,0 +1,13 @@
+{% extends 'users/base.html' %}
+
+{% block content %}
+<div class="container">
+    <h1>Patient Personal Data</h1>
+    <hr>
+        <h3>Patient Information:</h3>
+        <p><strong>First Name:</strong> {{ patient.first_name }}</p>
+        <p><strong>Last Name:</strong> {{ patient.last_name }}</p>
+        <p><strong>Date of Birth:</strong> {{ patient.date_birth }}</p>
+        <p><strong>Doctor:</strong> {{ patient.id_doctor }}</p>
+</div>
+{% endblock %}
