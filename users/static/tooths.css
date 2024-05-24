@@ -1,0 +1,73 @@
+body {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f0f0f0;
+}
+
+.dental-chart {
+    display: grid;
+    grid-template-rows: repeat(2, 1fr);
+    grid-template-columns: repeat(16, 1fr);
+    gap: 5px;
+}
+
+.row {
+    display: contents;
+}
+
+.tooth {
+    width: 50px;
+    height: 100px;
+    background-color: white;
+    border: 2px solid #ccc;
+    border-radius: 5px;
+    background-size: contain;
+    background-repeat: no-repeat;
+    background-position: center;
+    transition: background-color 0.3s ease, filter 0.3s ease;
+}
+
+.tooth.active {
+    background-color: yellow;
+    filter: brightness(0) saturate(100%) invert(90%) sepia(100%) saturate(500%) hue-rotate(30deg);
+}
+
+/* Add background images for each tooth */
+.tooth#tooth-1 { background-image: url('images/tooth_1.jpg'); }
+.tooth#tooth-2 { background-image: url('images/tooth_2.jpg'); }
+/* Continue for all 32 teeth */
+.tooth#tooth-3 { background-image: url('images/tooth_3.jpg'); }
+.tooth#tooth-4 { background-image: url('images/tooth_4.jpg'); }
+.tooth#tooth-5 { background-image: url('images/tooth_5.jpg'); }
+.tooth#tooth-6 { background-image: url('images/tooth_6.jpg'); }
+.tooth#tooth-7 { background-image: url('images/tooth_7.jpg'); }
+.tooth#tooth-8 { background-image: url('images/tooth_8.jpg'); }
+.tooth#tooth-9 { background-image: url('images/tooth_9.jpg'); }
+.tooth#tooth-10 { background-image: url('images/tooth_10.jpg'); }
+.tooth#tooth-11 { background-image: url('images/tooth_11.jpg'); }
+.tooth#tooth-12 { background-image: url('images/tooth_12.jpg'); }
+.tooth#tooth-13 { background-image: url('images/tooth_13.jpg'); }
+.tooth#tooth-14 { background-image: url('images/tooth_14.jpg'); }
+.tooth#tooth-15 { background-image: url('images/tooth_15.jpg'); }
+.tooth#tooth-16 { background-image: url('images/tooth_16.jpg'); }
+
+.tooth#tooth-17 { background-image: url('images/tooth_17.jpg'); }
+.tooth#tooth-18 { background-image: url('images/tooth_18.jpg'); }
+.tooth#tooth-19 { background-image: url('images/tooth_19.jpg'); }
+.tooth#tooth-20 { background-image: url('images/tooth_20.jpg'); }
+.tooth#tooth-21 { background-image: url('images/tooth_21.jpg'); }
+.tooth#tooth-22 { background-image: url('images/tooth_22.jpg'); }
+.tooth#tooth-23 { background-image: url('images/tooth_23.jpg'); }
+.tooth#tooth-24 { background-image: url('images/tooth_24.jpg'); }
+.tooth#tooth-25 { background-image: url('images/tooth_25.jpg'); }
+.tooth#tooth-26 { background-image: url('images/tooth_26.jpg'); }
+.tooth#tooth-27 { background-image: url('images/tooth_27.jpg'); }
+.tooth#tooth-28 { background-image: url('images/tooth_28.jpg'); }
+.tooth#tooth-29 { background-image: url('images/tooth_29.jpg'); }
+.tooth#tooth-30 { background-image: url('images/tooth_30.jpg'); }
+.tooth#tooth-31 { background-image: url('images/tooth_31.jpg'); }
+.tooth#tooth-32 { background-image: url('images/tooth_32.jpg'); }
